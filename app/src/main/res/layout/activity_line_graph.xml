@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/stock_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/line_chart_padding"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="@string/loading_failed"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progress_circle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:mlpb_enable_circle_background="false"
+        app:mlpb_progress_color="@color/material_blue_700"
+        app:mlpb_progress_stoke_width="4dp"
+        app:mlpb_progress_text_visibility="invisible"
+        app:mlpb_show_arrow="false" />
+
+</FrameLayout>
