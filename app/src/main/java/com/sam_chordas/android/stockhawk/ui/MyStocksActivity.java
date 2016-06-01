@@ -78,7 +78,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
             if (isConnected) {
                 startService(mServiceIntent);
             } else {
-                Snackbar.make(coordinatorLayout,"This app requires an internet connection!",Snackbar.LENGTH_LONG).setAction("RETRY", new View.OnClickListener() {
+                Snackbar.make(coordinatorLayout,R.string.connection,Snackbar.LENGTH_LONG).setAction("RETRY", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
@@ -139,7 +139,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                             })
                             .show();
                 } else {
-                    Snackbar.make(coordinatorLayout,"Cannot add stock! Internet Connection required!",Snackbar.LENGTH_LONG).setAction("RETRY", new View.OnClickListener() {
+                    Snackbar.make(coordinatorLayout,R.string.stocks,Snackbar.LENGTH_LONG).setAction("RETRY", new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
 
@@ -183,9 +183,6 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
         getLoaderManager().restartLoader(CURSOR_LOADER_ID, null, this);
     }
 
-    public void networkToast() {
-        Toast.makeText(mContext, getString(R.string.network_toast), Toast.LENGTH_SHORT).show();
-    }
 
     public void restoreActionBar() {
         ActionBar actionBar = getSupportActionBar();

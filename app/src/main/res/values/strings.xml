@@ -15,4 +15,6 @@
     <string name="error">Error</string>
     <string name="loading_failed">Oops! Something went wrong! Check Internet</string>
     <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <string name="connection">This app requires an internet connection!</string>
+    <string name="stocks">Cannot add stock! Internet Connection required!</string>
 </resources>
