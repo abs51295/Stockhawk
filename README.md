@@ -10,3 +10,6 @@ Major libraries used
 5.simonvt schematic schematic <br>
 6.melnykov floatingactionbutton <br>
 7.lecho hellocharts
+
+## Screenshots
+<img width="40%" vspace="20" hspace="20" src="https://cloud.githubusercontent.com/assets/13438222/24332798/550c18c6-126a-11e7-9826-b8dbaa1bc1dd.png" /> <img width="40%" vspace="20" hspace="20" src="https://cloud.githubusercontent.com/assets/13438222/24332797/550a570c-126a-11e7-9509-3388bdcc26be.png" />
